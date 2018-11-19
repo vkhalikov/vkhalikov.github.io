@@ -107,6 +107,10 @@ body {
 	transition: 0.2s ease-in-out;
 }
 
+.button-header {
+	border: 2px solid #061E37;
+}
+
 .button-header:hover, .button-header:hover  {
 	color: #061E37;
 	background-color: #fff;
@@ -119,18 +123,21 @@ body {
 	border: 2px solid #1DE9B6;
 }
 
-.button-section:hover, .button-section:hover  {
+.button-section:hover, .button-section:active  {
 	background-color: #fff;
 	color: #1DE9B6;
 	font-weight: 400;
 }
 
-.collapser:link, .collapser:visited, .collapser:hover, .collapser:active  {
+.section__collapser:link, .section__collapser:visited,.section__collapser:hover,.section__collapser:active {
 	text-decoration: none;
 	color: #061e37;
+	padding: 0;
+}
+
+.collapser {
 	font-size:  1.5625em;
 	margin-left: auto;
-	padding-left: 75px;
 }
 
 /*BG COLORS*/
@@ -157,7 +164,7 @@ body {
 
 /*FORMS*/
 
-.form-control {
+.form-styled {
 	color: #061e37;
 	font-size: 0.9375em;
 	font-weight: 500;
@@ -364,6 +371,38 @@ body {
 }
 /*Content Section END*/
 
+/*Footer Section START*/
+
+.footer {
+	background-color: #061e37;
+	font-size: 0.9375em;
+}
+
+.footer__link-social, .footer__link-social:link, .footer__link-social:visited  {
+	color: #fff;
+	transition: 0.3s;
+	opacity: 0.3;
+	text-decoration: none;
+}
+
+.footer__link-social:hover, .footer__link-social:active  {
+	opacity: 1;
+}
+
+.footer__link-social + .footer__link-social {
+	padding-left: 15px;
+}
+
+.footer__link:link, .footer__link:visited {
+	color: #fff;
+	opacity: 0.7;
+}
+
+.footer__link:hover, .footer__link:active {
+	opacity: 1;
+}
+
+/*Footer Section END*/
 
 /*MEDIA QUERIES*/
 

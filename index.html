@@ -25,7 +25,7 @@
 						<li class="nav-item"><a href="#" class="nav-link navigation__link">Help</a></li>
 					</ul>
 					<ul class="navbar-nav mr-1">
-						<li class="navbar-item"><a class="nav-link px-4 navigation__button navigation__link" href="#">sign up</a></li>
+						<li class="navbar-item"><a class="nav-link px-4 navigation__button navigation__link" data-toggle="modal" href="#auth__modal">sign up</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -42,8 +42,31 @@ laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<div class="col-md-6 mb-5 align-items-center"><img src="img/video.jpg" alt="video" class="img-fluid shadow d-block mx-auto"></div>
 			</div>
 		</div>
+		<div class="modal" tabindex="-1" id="auth__modal" role="dialog">
+		  	<div class="modal-dialog" role="document">
+		   		<div class="modal-content">
+		      		<div class="modal-header">
+		        		<h5 class="modal-title">Sign up for news</h5>
+		       			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		         		<span aria-hidden="true">&times;</span>
+		        		</button>
+		      		</div>
+		      	<div class="modal-body">
+		        	<form action="#">
+		        		<input name="email" type="email" class="form-control" placeholder="Email">
+		        		<input type="password" name="password" class="form-control mt-3" placeholder="Password">
+		        	</form>
+		     	</div>
+		      	<div class="modal-footer justify-content-around">
+		        	<button type="button" class="btn button-styled button-header" data-dismiss="modal">Close</button>
+		        	<button type="button" class="btn button-styled button-section">Sign up</button>
+		      	</div>
+		    </div>
+		  </div>
+		</div>
 	</header>
 	<!-- Header Section END -->
+
 	<!-- Content Section START -->
 	<section class="container-fluid section about text-center">
 		<div class="container wrapper">
@@ -112,65 +135,75 @@ laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<h2 class="section_h2">Services</h2>
 				<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 			</div>
-			<div class="section__card icon-darkBlue box-shadow p-3">
+			<div class="section__card icon-darkBlue box-shadow">
 				<div class="card-head">
-					<span class="fas fa-chart-line icon-small"></span>
-					<div class="text-uppercase font-weight-bold pl-4">statistics</div>
-					<a href="#card-collapse1" class="fas fa-caret-down collapser" data-toggle="collapse" ></a>
+					<a href="#card-collapse1" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-chart-line icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
 				</div>
-				<div id="card-collapse1" class="collapse row pt-3" >
+				<div id="card-collapse1" class="collapse row px-3 pb-3" >
 					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
 					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 					</p>
 					</div>
 				</div>
 			</div>
-			<div class="section__card icon-darkBlue box-shadow p-3">
+			<div class="section__card icon-darkBlue box-shadow">
 				<div class="card-head">
-					<span class="fas fa-envelope icon-small"></span>
-					<div class="text-uppercase font-weight-bold pl-4">inbox</div>
-					<a href="#card-collapse2" class="fas fa-caret-down collapser" data-toggle="collapse" ></a>
+					<a href="#card-collapse2" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-envelope icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
 				</div>
-				<div id="card-collapse2" class="collapse row pt-3" >
+				<div id="card-collapse2" class="collapse row px-3 pb-3" >
 					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
 					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 					</p>
 					</div>
 				</div>
 			</div>
-			<div class="section__card icon-darkBlue box-shadow p-3">
+			<div class="section__card icon-darkBlue box-shadow">
 				<div class="card-head">
-					<span class="fas fa-users icon-small"></span>
-					<div class="text-uppercase font-weight-bold pl-4">team</div>
-					<a href="#card-collapse3" class="fas fa-caret-down collapser" data-toggle="collapse" ></a>
+					<a href="#card-collapse3" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-users icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
 				</div>
-				<div id="card-collapse3" class="collapse row pt-3" >
+				<div id="card-collapse3" class="collapse row px-3 pb-3" >
 					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
 					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 					</p>
 					</div>
 				</div>
 			</div>
-			<div class="section__card icon-darkBlue box-shadow p-3">
+			<div class="section__card icon-darkBlue box-shadow">
 				<div class="card-head">
-					<span class="fas fa-cog icon-small"></span>
-					<div class="text-uppercase font-weight-bold pl-4">settings</div>
-					<a href="#card-collapse4" class="fas fa-caret-down collapser" data-toggle="collapse" ></a>
+					<a href="#card-collapse4" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-cog icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
 				</div>
-				<div id="card-collapse4" class="collapse row pt-3" >
+				<div id="card-collapse4" class="collapse row px-3 pb-3" >
 					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
 					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 					</p>
 					</div>
 				</div>
 			</div>
-			<div class="section__card icon-darkBlue box-shadow p-3">
+			<div class="section__card icon-darkBlue box-shadow">
 				<div class="card-head">
-					<span class="fas fa-rss icon-small"></span>
-					<div class="text-uppercase font-weight-bold pl-4">feed</div>
-					<a href="#card-collapse5" class="fas fa-caret-down collapser" data-toggle="collapse" ></a>
+					<a href="#card-collapse5" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-rss icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
 				</div>
-				<div id="card-collapse5" class="collapse row pt-3" >
+				<div id="card-collapse5" class="collapse row px-3 pb-3" >
 					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
 					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 					</p>
@@ -210,7 +243,7 @@ laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 	<section class="section team">
 		<div class="wrapper-xs text-center mx-auto">
-			<h2 class="section_h2 text-capitalize">our team</h2>
+			<h2 class="section_h2 text-capitalize mx-2 mx-md-0">our team</h2>
 			<p class="section_p mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 			<div class="nav nav-pills align-items-center justify-content-around mb-4" id="pills-tab">
 				<a href="#pills-member1" class="team__pill-toggler" data-toggle="pill"><img src="img/team-avatar1.jpg" alt="team avatar" class="img-fluid rounded-circle"></a>
@@ -261,21 +294,21 @@ laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<form action="#">
 				<div class="row">
 					<div class="col-sm-6 mb-2">
-						<input name="firstName" type="text" class="form-control" placeholder="First Name">
+						<input name="firstName" type="text" class="form-control form-styled" placeholder="First Name">
 					</div>
 					<div class="col-sm-6 mb-2">
-						<input name="lastName" type="text" class="form-control" placeholder="Last Name">
+						<input name="lastName" type="text" class="form-control form-styled" placeholder="Last Name">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-6 mb-2">
-						<input name="email" type="text" class="form-control" placeholder="Email">
+						<input name="email" type="email" class="form-control form-styled" placeholder="Email">
 					</div>
 					<div class="col-sm-6 mb-2">
-						<input name="phoneNumber" type="tel" class="form-control" placeholder="Phone">
+						<input name="phoneNumber" type="tel" class="form-control form-styled" placeholder="Phone">
 					</div>
 				</div>
-				<textarea name="message" rows="5" id="" class="form-control mb-4" placeholder="Message"></textarea>
+				<textarea name="message" rows="5" id="" class="form-control form-styled mb-4" placeholder="Message"></textarea>
 				<div class="container-fluid d-flex flex-row">
 					<div class="form-check form-check-inline justify-content-start">
 						<input type="checkbox" class="form-check-input custom-control-input" name="subscribe" id="subscribe" value="1">
@@ -286,6 +319,41 @@ laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</form>
 		</div>
 	</section>
+	<!-- Content Section END -->
+
+	<!-- Footer Section START -->
+	<footer class="footer section">
+		<div class="container wrapper">
+			<nav class="navbar navbar-expand-md px-0 text-center">
+				<a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo"></a>
+				<a href="#menu-collapsed-footer" data-toggle="collapse" class="navbar-toggler navigation__toggler"><span class="fas fa-bars"></span></a>
+				<div class="collapse navbar-collapse justify-content-end" id="menu-collapsed-footer">
+					<ul class="navbar-nav navbar__main">
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Service</a></li>
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Extensions</a></li>
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Pricing</a></li>
+						<li class="nav-item pr-md-0"><a href="#" class="nav-link footer__link pr-md-0">Help</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="mt-4 footer__social d-flex justify-content-between flex-column flex-sm-row align-items-center">
+				<div class="">
+					<a href="#" class="footer__link-social text-capitalize">privacy policy</a>
+					<a href="#" class="footer__link-social text-capitalize">about us</a>
+					<a href="#" class="footer__link-social text-capitalize">about us</a>
+				</div>
+				<div class="mt-3 mt-sm-0">
+					<a href="#" class="footer__link-social"><span class="fab fa-facebook"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-twitter"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-linkedin-in"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-dribbble"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-behance"></span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section END -->
 	<!-- BOOTSTRAP JS SOURCES -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

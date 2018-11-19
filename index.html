@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Dart Service Manager</title>
+</head>
+<body>
+	<!-- Header Section START -->
+	<header class="header">
+		<div class="container-fluid wrapper">
+			<nav class="navbar navbar-expand-md px-0 text-center navigation">
+				<a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo"></a>
+				<a href="#menu-collapsed" data-toggle="collapse" class="navbar-toggler navigation__toggler"><span class="fas fa-bars"></span></a>
+				<div class="collapse navbar-collapse" id="menu-collapsed">
+					<ul class="navbar-nav mx-auto navbar__main">
+						<li class="nav-item"><a href="#" class="nav-link navigation__link">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link navigation__link">Service</a></li>
+						<li class="nav-item"><a href="#" class="nav-link navigation__link">Extensions</a></li>
+						<li class="nav-item"><a href="#" class="nav-link navigation__link">Pricing</a></li>
+						<li class="nav-item"><a href="#" class="nav-link navigation__link">Help</a></li>
+					</ul>
+					<ul class="navbar-nav mr-1">
+						<li class="navbar-item"><a class="nav-link px-4 navigation__button navigation__link" data-toggle="modal" href="#auth__modal">sign up</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row align-items-center header__content">
+				<div class="col-md-6 mb-5 align-items-center">
+					<h1 class="header__h1">lorem Ipsum Dolor sit amet</h1>
+					<p class="header__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
+laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div class="d-flex flex-row justify-content-around">
+						<button type="button" class="btn shadow mx-auto button-styled button-header">buy now</button>
+						<button class="btn shadow mx-auto button-styled button-header">try for free</button>
+					</div>
+				</div>
+				<div class="col-md-6 mb-5 align-items-center"><img src="img/video.jpg" alt="video" class="img-fluid shadow d-block mx-auto"></div>
+			</div>
+		</div>
+		<div class="modal" tabindex="-1" id="auth__modal" role="dialog">
+		  	<div class="modal-dialog" role="document">
+		   		<div class="modal-content">
+		      		<div class="modal-header">
+		        		<h5 class="modal-title">Sign up for news</h5>
+		       			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		         		<span aria-hidden="true">&times;</span>
+		        		</button>
+		      		</div>
+		      	<div class="modal-body">
+		        	<form action="#">
+		        		<input name="email" type="email" class="form-control" placeholder="Email">
+		        		<input type="password" name="password" class="form-control mt-3" placeholder="Password">
+		        	</form>
+		     	</div>
+		      	<div class="modal-footer justify-content-around">
+		        	<button type="button" class="btn button-styled button-header" data-dismiss="modal">Close</button>
+		        	<button type="button" class="btn button-styled button-section">Sign up</button>
+		      	</div>
+		    </div>
+		  </div>
+		</div>
+	</header>
+	<!-- Header Section END -->
+
+	<!-- Content Section START -->
+	<section class="container-fluid section about text-center">
+		<div class="container wrapper">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-5">
+					<h2 class="section_h2 text-capitalize">easy & useful</h2>
+					<h3 class="section_h3 text-capitalize">project management tool</h3>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-between pt-5">
+				<div class="col-md-4">
+					<i class="fas fa-file-invoice icon-large icon-purple"></i>
+					<h4 class="section_h4 text-capitalize">title goes here</h4>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="col-md-4">
+					<i class="fas fa-user-alt icon-large icon-lightBlue"></i>
+					<h4 class="section_h4 text-capitalize">title goes here</h4>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="col-md-4">
+					<i class="fas fa-briefcase icon-large icon-pink"></i>
+					<h4 class="section_h4 text-capitalize">title goes here</h4>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center pt-5">
+				<div class="col-md-4">
+					<button class="btn shadow mx-auto button-styled button-section">try for free</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container-fluid stats px-0">
+		<div class="row no-gutters">
+			<div class="col-sm-6 col-lg-3 d-flex flex-row align-items-center justify-content-center bg-color-lightBlue py-4">
+				<div class="rounded-circle icon-rounded text-center">
+					<span class="fas fa-building icon-medium icon-lightBlue pt-1"></span>
+				</div>
+				<div class="stats__text">1200+ <br> Business</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 d-flex flex-row align-items-center justify-content-center bg-color-blue py-4">
+				<div class="rounded-circle icon-rounded text-center">
+					<span class="fas fa-download icon-medium icon-blue pt-1"></span>
+				</div>
+				<div class="stats__text">60000+ <br> Downloads</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 d-flex flex-row align-items-center justify-content-center bg-color-purple py-4">
+				<div class="rounded-circle icon-rounded text-center">
+					<span class="fas fa-user icon-medium icon-purple pt-1"></span>
+				</div>
+				<div class="stats__text">30000+ <br> Free Installs</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 d-flex flex-row align-items-center justify-content-center bg-color-pink py-4">
+				<div class="rounded-circle icon-rounded text-center">
+					<span class="fas fa-download icon-medium icon-pink pt-1"></span>
+				</div>
+				<div class="stats__text">40000+ <br> Pro Users</div>
+			</div>
+		</div>
+	</section>
+	<section class="section container-fluid services">
+		<div class="wrapper-sm mx-auto">
+			<div class="text-center mb-5">
+				<h2 class="section_h2">Services</h2>
+				<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			</div>
+			<div class="section__card icon-darkBlue box-shadow">
+				<div class="card-head">
+					<a href="#card-collapse1" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-chart-line icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
+				</div>
+				<div id="card-collapse1" class="collapse row px-3 pb-3" >
+					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
+					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__card icon-darkBlue box-shadow">
+				<div class="card-head">
+					<a href="#card-collapse2" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-envelope icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
+				</div>
+				<div id="card-collapse2" class="collapse row px-3 pb-3" >
+					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
+					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__card icon-darkBlue box-shadow">
+				<div class="card-head">
+					<a href="#card-collapse3" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-users icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
+				</div>
+				<div id="card-collapse3" class="collapse row px-3 pb-3" >
+					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
+					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__card icon-darkBlue box-shadow">
+				<div class="card-head">
+					<a href="#card-collapse4" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-cog icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
+				</div>
+				<div id="card-collapse4" class="collapse row px-3 pb-3" >
+					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
+					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="section__card icon-darkBlue box-shadow">
+				<div class="card-head">
+					<a href="#card-collapse5" class="section__collapser container-fluid d-flex flex-row align-items-baseline p-3" data-toggle="collapse">
+						<span class="fas fa-rss icon-small"></span>
+						<div class="text-uppercase font-weight-bold pl-4">statistics</div>
+						<span class="fas fa-caret-down collapser"></span>
+					</a>
+				</div>
+				<div id="card-collapse5" class="collapse row px-3 pb-3" >
+					<div class="col-md-4"><img src="img/statistics.jpg" alt="card-image" class="img-fluid rounded"></div>
+					<div class="col-md-8 text-justify mt-3 mt-md-0"><p class="p-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section comments">
+		<div class="container-fluid wrapper">
+			<div class="row">
+				<div class="col-md-5 py-md-4 my-5">
+					<h2 class="section_h2 text-white">What our customers have to say about us.</h2>
+					<p class="section_p text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<button class="btn shadow button-styled button-header mt-5 d-block mx-auto mx-md-0">get started</button>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-12 comments__card">
+							<img src="img/avatar1.png" alt="author" class="avatar rounded-circle">
+							<div class="container-fluid comments__comment rounded">
+								<p class="comments__author">John Doe</p>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</div>
+						</div>
+						<div class="col-12 comments__card mt-5">
+							<img src="img/avatar2.png" alt="author" class="avatar rounded-circle">
+							<div class="container-fluid comments__comment rounded">
+								<p class="comments__author">Khalessi</p>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section team">
+		<div class="wrapper-xs text-center mx-auto">
+			<h2 class="section_h2 text-capitalize mx-2 mx-md-0">our team</h2>
+			<p class="section_p mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			<div class="nav nav-pills align-items-center justify-content-around mb-4" id="pills-tab">
+				<a href="#pills-member1" class="team__pill-toggler" data-toggle="pill"><img src="img/team-avatar1.jpg" alt="team avatar" class="img-fluid rounded-circle"></a>
+				<a href="#pills-member2" class="team__pill-toggler active" data-toggle="pill"><img src="img/team-avatar3.jpg" alt="team avatar" class="img-fluid rounded-circle"></a>
+				<a href="#pills-member3" class="team__pill-toggler" data-toggle="pill"><img src="img/team-avatar2.jpg" alt="team avatar" class="img-fluid rounded-circle"></a>
+			</div>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane px-2 px-md-0" id="pills-member1">
+					<p class="comments__author">Jessy Jackson</p>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					<div class="team__social d-flex flex-row justify-content-center align-items-center">
+						<a href="#" class="link-social"><span class="fab fa-twitter icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-facebook icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-linkedin-in icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-dribbble icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-behance icon-small"></span></a>
+					</div>
+				</div>
+				<div class="tab-pane active show px-2 px-md-0" id="pills-member2">
+					<p class="comments__author">Sophie Turner</p>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					<div class="team__social d-flex flex-row justify-content-center align-items-center">
+						<a href="#" class="link-social"><span class="fab fa-twitter icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-facebook icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-linkedin-in icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-dribbble icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-behance icon-small"></span></a>
+					</div>
+				</div>
+				<div class="tab-pane px-2 px-md-0" id="pills-member3">
+					<p class="comments__author">Jhon Doe</p>
+					<p class="section_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					<div class="team__social d-flex flex-row justify-content-center align-items-center">
+						<a href="#" class="link-social"><span class="fab fa-twitter icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-facebook icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-linkedin-in icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-dribbble icon-small"></span></a>
+						<a href="#" class="link-social"><span class="fab fa-behance icon-small"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section contacts">
+		<div class="wrapper-xs container-fluid">
+			<h2 class="section_h2 text-capitalize text-center">contact us</h2>
+			<p class="section_p contacts__text mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			<form action="#">
+				<div class="row">
+					<div class="col-sm-6 mb-2">
+						<input name="firstName" type="text" class="form-control form-styled" placeholder="First Name">
+					</div>
+					<div class="col-sm-6 mb-2">
+						<input name="lastName" type="text" class="form-control form-styled" placeholder="Last Name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 mb-2">
+						<input name="email" type="email" class="form-control form-styled" placeholder="Email">
+					</div>
+					<div class="col-sm-6 mb-2">
+						<input name="phoneNumber" type="tel" class="form-control form-styled" placeholder="Phone">
+					</div>
+				</div>
+				<textarea name="message" rows="5" id="" class="form-control form-styled mb-4" placeholder="Message"></textarea>
+				<div class="container-fluid d-flex flex-row">
+					<div class="form-check form-check-inline justify-content-start">
+						<input type="checkbox" class="form-check-input custom-control-input" name="subscribe" id="subscribe" value="1">
+						<label for="subscribe" class="form-check-label custom-control-label">subscribe to the newsletter</label>
+					</div>
+					<button type="submit" class="btn button-styled button-section shadow d-block ml-auto">send</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- Content Section END -->
+
+	<!-- Footer Section START -->
+	<footer class="footer section">
+		<div class="container wrapper">
+			<nav class="navbar navbar-expand-md px-0 text-center">
+				<a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo"></a>
+				<a href="#menu-collapsed-footer" data-toggle="collapse" class="navbar-toggler navigation__toggler"><span class="fas fa-bars"></span></a>
+				<div class="collapse navbar-collapse justify-content-end" id="menu-collapsed-footer">
+					<ul class="navbar-nav navbar__main">
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Service</a></li>
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Extensions</a></li>
+						<li class="nav-item"><a href="#" class="nav-link footer__link">Pricing</a></li>
+						<li class="nav-item pr-md-0"><a href="#" class="nav-link footer__link pr-md-0">Help</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="mt-4 footer__social d-flex justify-content-between flex-column flex-sm-row align-items-center">
+				<div class="">
+					<a href="#" class="footer__link-social text-capitalize">privacy policy</a>
+					<a href="#" class="footer__link-social text-capitalize">about us</a>
+					<a href="#" class="footer__link-social text-capitalize">about us</a>
+				</div>
+				<div class="mt-3 mt-sm-0">
+					<a href="#" class="footer__link-social"><span class="fab fa-facebook"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-twitter"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-linkedin-in"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-dribbble"></span></a>
+					<a href="#" class="footer__link-social"><span class="fab fa-behance"></span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section END -->
+	<!-- BOOTSTRAP JS SOURCES -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+</body>
+</html>

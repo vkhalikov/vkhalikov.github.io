@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
@@ -35,8 +36,8 @@
 			<h1 class="h1 text-uppercase mb-4">welcome to my portfolio</h1>
 			<h3 class="h3 text-uppercase">go to the section below to see the examples of my work</h3>
 			<div class="row">
-				<div class="col-md-6 pt-3"><a href="#examples__anchor" class="btn">find out more</a></div>
-				<div class="col-md-6 pt-3"><a href="#contact__anchor" class="btn button-secondary">contact me</a></div>
+				<div class="col-md-6 pt-3"><a href="#examples__anchor" class="btn shadow">find out more</a></div>
+				<div class="col-md-6 pt-3"><a href="#contact__anchor" class="btn shadow button-secondary">contact me</a></div>
 			</div>
 		</div>
 	</header>
@@ -44,14 +45,14 @@
 		<div class="container-fluid wrapper mx-auto">
 			<h2 class="h2 text-center text-uppercase">examples</h2>
 			<h4 class="h5 text-center  mt-3">Click on the image to see a full version, or go directly to a website by pressing a button</h4>
-			<div class="row py-4 justify-content-around">
+			<div class="row py-4 justify-content-around align-items-center">
 				<div class="col-sm-6 col-lg-4">
 					<div class="card">
-							<div class="card-wip container-fluid"></div>
+							<div class="card__container_img card-wip"><i class="fas fa-wrench img__icon-wip"></i></div>
 						  	<div class="card-body">
 						    	<h5 class="card-title">WIP</h5>
 							    <p class="card-text">I'm still working on something new</p>
-							    <a href="#" class="btn button-animate">Visit a website <i class="fas fa-angle-double-right"></i></a>
+							    <a href="#" class="btn disabled">under development</a>
 						  	</div>
 					</div>
 				</div>
@@ -78,6 +79,101 @@
 							    <p class="card-text">My first landing page</p>
 							    <a href="examples/lian/index.html" class="btn button-animate">Visit a website <i class="fas fa-angle-double-right"></i></a>
 						  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="resume" id="about__anchor">
+		<div class="wrapper py-4 mx-auto container-fluid ">
+			<h1 class="resume__name"><span class="first-name">vadim</span> khalikov</h1>
+			<h2 class="resume__spec">front end developer</h2>
+			<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, neque, delectus. Animi mollitia ullam tempore repellat veniam, excepturi vero vel et tempora modi fugiat! Aperiam, libero, modi! Numquam cumque, dicta.</p>
+			<div class="row">
+				<div class="col-sm-4 py-3">
+					<h3 class="resume__title"><i class="fas fa-user-circle"></i> personal info</h3>
+						<div>
+							<h4 class="resume__personal-title">City</h4>
+							<p class="">Saint-Petersburg, Russia</p>
+							<h4 class="resume__personal-title">Phone</h4>
+							<p class="">+7 (965) 019-69-14</p>
+							<h4 class="resume__personal-title">E-mail</h4>
+							<p class="">vkhalikov.work@gmail.com</p>
+							<h4 class="resume__personal-title">Github</h4>
+							<a href="https://github.com/vkhalikov" class="resume__link"><p class="">github.com/vkhalikov</p></a>
+							<h4 class="resume__personal-title">VK</h4>
+							<a href="https://vk.com/ashon" class="resume__link"><p class="">vk.com/ashon</p></a>
+						</div>
+					<h3 class="resume__title"><i class="fas fa-globe-americas"></i> languages</h3>
+						<div>
+							<h4 class="resume__personal-title">Russian</h4>
+							<div class="progress">
+								<div class="progress-bar w-100"></div>
+							</div>
+							<div class="progress-label">native</div>
+							<h4 class="resume__personal-title">English</h4>
+							<div class="progress">
+								<div class="progress-bar w-75"></div>
+							</div>
+							<div class="progress-label">upper-intermediate</div>
+						</div>
+				</div>
+				<div class="col-sm-8 py-3">
+					<h3 class="resume__title"><i class="fas fa-wrench"></i> Skills</h3>
+					<div class="row">
+						<div class="col-5 col-md-3">
+							<h5 class="resume__personal-title">HTML5 <i class="fab fa-html5 font-weight-normal"></i></h5>
+						</div>
+						<div class="col-7 col-md-3">
+							<div class="skill-level">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div class="skill-false"></div>
+							</div>
+							<p class="skill-label">advanced</p>
+						</div>
+						<div class="col-7 col-md-3">
+							<h5 class="resume__personal-title">CSS3 <i class="fab fa-css3-alt font-weight-normal"></i></h5>
+						</div>
+						<div class="col-7 col-md-3">
+							<div class="skill-level">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div class="skill-false"></div>
+							</div>
+							<p class="skill-label">advanced</p>
+						</div>
+					</div>
+					<h3 class="resume__title"><i class="fas fa-graduation-cap mr-3"></i> Education</h3>
+					<div class="row">
+						<div class="col-md-2"></span>
+							<span class="resume__date">2013-09 -</span>
+							<span class="resume__date">2017-06</span>
+						</div>
+						<div class="col-md-10">
+							<h5 class="resume__main-title">amur state university</h5>
+							<ul>
+								<li>B.Eng. in Electrical Engineering - 2016</li>
+								<li>4.6 GPA</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+							<span class="resume__date">2016-09 -</span>
+							<span class="resume__date">2019-06</span>
+						</div>
+						<div class="col-md-10">
+							<h5 class="resume__main-title">Saint-Petersburg Electrotechnical University (ETU "LETI")</h5>
+							<ul>
+								<li>M.Eng. in Electrical Engineering - 2019</li>
+								<li>TBA GPA</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,5 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
   position: relative;
   color: #4D494A
 }
@@ -168,6 +167,7 @@ body {
 	text-align: center;
 	transition: 0.25s ease-in-out;
 	border-bottom: 1px solid #fff;
+	font-weight: 700;
 }
 
 .nav-link:hover, .nav-link:active {
@@ -233,6 +233,14 @@ body {
 	position: relative;
 }
 
+.card-wip {
+	max-width: 100%;
+	height: 180px;
+	opacity: 0.7;
+	background-color: #4D494A;
+	
+}
+
 .card__img {
 	background-color: #4D494A;
 	transition: opacity 0.4s ease-in-out;
@@ -249,6 +257,16 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
+.img__icon-wip {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #fff;
+    opacity: 1;
+}
+
 .card:hover .card__img{
 	opacity: 0.7;
 }
@@ -258,5 +276,133 @@ body {
 }
 /*EXAMPLES SECTION END*/
 
+/*RESUME SECTION START*/
+
+.resume {
+	font-family: 'Arimo', sans-serif;
+	background-color: #fff;
+	color: #343434;
+}
+
+.resume__name {
+	font-size: 2.6875em;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #434343;
+}
+
+.resume__spec {
+	font-size: 1.375em;
+	text-transform: capitalize;
+	color: #434343;
+}
+
+.resume__title {
+	font-size: 1.375em;
+	font-weight: 700;
+	text-transform: capitalize;
+	border-bottom: 1px solid #d5d6d6;
+	color: #434343;
+	margin-bottom: 0.75em;
+}
+
+.resume__personal-title {
+	font-size: 0.9375em;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.resume__main-title {
+	font-size: 1.1875em;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.resume__link, .resume__link:hover, .resume__link:active {
+	color: #555;
+}
+
+.first-name {
+	font-weight: 400;
+}
+
+.resume ul {
+	padding: 0;
+	list-style: none;
+}
+
+.resume li {
+	padding-left: 0.75em;
+	position: relative;
+}
+
+.resume li:before {
+	content: '\2022';
+	position: absolute;
+	left: 0;
+}
+
+.resume__date {
+	font-size: 0.8em;
+	font-weight: 700;
+	display: block;
+}
+
+.progress {
+	font-weight: 400;
+	height: 0.8em;
+	background-color: #f0f0f0;
+}
+
+.progress-bar {
+	background-color: #555;
+}
+
+.progress-label {
+	margin-top: 0.75em;
+	text-align: right;
+	font-weight: 400;
+	font-size: 0.85em;
+}
+
+.skill-level {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.skill-level div {
+	display: inline-block;
+	width: 0.8125em;
+	height: 0.8125em;
+	background-color: #666;
+	border: 1px solid #666;
+	border-radius: 50%;
+	margin-left: 0.25em;
+	margin-top: 0.15em;
+}
+
+.skill-level .skill-false {
+	background-color: transparent;
+}
+
+.skill-label {
+	text-align: left;
+	font-size: 0.8125em;
+	margin-top: 0.25em;
+	padding-left: 0.25em;
+}
+/*RESUME SECTION END*/
+
 
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+	
+	.resume__date {
+		display: inline-block;
+	}
+
+
+
+}

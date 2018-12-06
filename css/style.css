@@ -69,6 +69,10 @@ body {
 	opacity: 1;
 }
 
+.btn-block {
+	letter-spacing: 2px;
+}
+
 /*ANIMATIONS*/
 
 @keyframes bounceInLeft {
@@ -196,9 +200,17 @@ body {
 /*HEADER SECTION START*/
 
 .header {
-	min-height: 400px;
+	min-height: 80vh;
 	background: linear-gradient( 143deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.7) 100%),
   	url(../img/background_header.jpg)  center center no-repeat / cover;
+  	display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flex;
+  	display: -o-flex;
+  	display: flex;
+  	flex-flow: column;
+  	justify-content: center;
+  	align-content: center;
 }
 
 .header .container-fluid {
@@ -219,7 +231,6 @@ body {
 	margin-top: 30px;
 	box-shadow: 0.175rem 0.175rem .1rem rgba(0,0,0,.075);
 	transition: all 0.4s ease-in-out;
-	animation: bounceInLeft 1s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -282,6 +293,7 @@ body {
 	font-family: 'Arimo', sans-serif;
 	background-color: #fff;
 	color: #343434;
+	margin: 2em 0;
 }
 
 .resume__name {
@@ -304,6 +316,7 @@ body {
 	border-bottom: 1px solid #d5d6d6;
 	color: #434343;
 	margin-bottom: 0.75em;
+	vertical-align: text-top;
 }
 
 .resume__personal-title {
@@ -373,13 +386,13 @@ body {
 
 .skill-level div {
 	display: inline-block;
-	width: 0.8125em;
-	height: 0.8125em;
+	width: 0.6125em;
+	height: 0.6125em;
 	background-color: #666;
 	border: 1px solid #666;
 	border-radius: 50%;
-	margin-left: 0.25em;
 	margin-top: 0.15em;
+	margin-right: 0.25em;
 }
 
 .skill-level .skill-false {
@@ -390,10 +403,25 @@ body {
 	text-align: left;
 	font-size: 0.8125em;
 	margin-top: 0.25em;
-	padding-left: 0.25em;
 }
 /*RESUME SECTION END*/
 
+/*FOOTER SECTION END*/
+
+.footer {
+	font-size: 0.8em;
+	background-color: #4D494A;
+	color: #f1f1f1;
+	font-weight: 400;
+}
+
+.copyright {
+	opacity: 0.9;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/*FOOTER SECTION START*/
 
 /*MEDIA QUERIES*/
 
@@ -402,7 +430,5 @@ body {
 	.resume__date {
 		display: inline-block;
 	}
-
-
 
 }

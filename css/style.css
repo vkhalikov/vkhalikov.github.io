@@ -195,12 +195,13 @@ body {
 	border-bottom: 1px solid #000;
 }
 
+
 /*NAVBAR SECTION END*/
 
 /*HEADER SECTION START*/
 
 .header {
-	min-height: 80vh;
+	min-height: 100vh;
 	background: linear-gradient( 143deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.7) 100%),
   	url(../img/background_header.jpg)  center center no-repeat / cover;
   	display: -webkit-flex;
@@ -229,8 +230,14 @@ body {
 
 .card {
 	margin-top: 30px;
-	box-shadow: 0.175rem 0.175rem .1rem rgba(0,0,0,.075);
+	min-height: 380px;
 	transition: all 0.4s ease-in-out;
+}
+
+.card-body {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
 }
 
 @media screen and (min-width: 1024px) {
@@ -242,6 +249,8 @@ body {
 
 .card__container_img {
 	position: relative;
+	max-height: 180px;
+	overflow: hidden;
 }
 
 .card-wip {
@@ -285,6 +294,22 @@ body {
 .card:hover .img__icon-zoom{
 	opacity: 0.7;
 }
+
+.link-repo {
+	color: 	#4D494A;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	text-align: center;
+	transition: 0.25s ease-in-out;
+	border-bottom: 1px solid #fff;
+	font-weight: 700;
+	padding-right: 5px;
+}
+
+.link-repo:hover, .link-repo:active, .link-repo:visited {
+	color: #4D494A;
+}
+
 /*EXAMPLES SECTION END*/
 
 /*RESUME SECTION START*/
@@ -293,7 +318,7 @@ body {
 	font-family: 'Arimo', sans-serif;
 	background-color: #fff;
 	color: #343434;
-	margin: 2em 0;
+	padding: 2em 0;
 }
 
 .resume__name {

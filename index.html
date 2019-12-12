@@ -6,23 +6,24 @@
 	<!-- Primary Meta Tags -->
 	<title>Vadim Khalikov. Portfolio</title>
 	<meta name="title" content="Vadim Khalikov. Portfolio">
-	<meta name="description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to hire me?  Not a problem! Just contact me via contact section.">
+	<meta name="description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to contact me? Just contact me via contact section.">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://vkhalikov.github.io/">
 	<meta property="og:title" content="Vadim Khalikov. Portfolio">
-	<meta property="og:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to hire me?  Not a problem! Just contact me via contact section.">
+	<meta property="og:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the projects section. There is also a little information about me.  Want to contact me? Just contact me via contact section.">
 	<meta property="og:image" content="example.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://vkhalikov.github.io/">
 	<meta property="twitter:title" content="Vadim Khalikov. Portfolio">
-	<meta property="twitter:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to hire me?  Not a problem! Just contact me via contact section.">
+	<meta property="twitter:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to contact me? Just contact me via contact section.">
 	<meta property="twitter:image" content="example.png">
 
 	<!-- Links -->
+	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
@@ -34,7 +35,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
 	<!-- NAV SECTION -->
 	<nav class="navbar sticky-top shadow navbar-expand-sm">
-		<div class="container-fluid wrapper my-2">
+		<div class="container-fluid wrapper">
 			<a href="#home__anchor" class="navbar-brand"><img src="img/khalikovWebdev_logo.png" alt="Logo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler-button">
    				 <span class="fas fa-bars"></span>
@@ -42,7 +43,7 @@
   				<div class="collapse navbar-collapse justify-content-end" id="navbar-toggler-button">
 					<ul class="navbar-nav justify-content-around align-items-center">
 						<li class="nav-item"><a href="#home__anchor" class="nav-link px-lg-4">home</a></li>
-						<li class="nav-item"><a href="#examples__anchor" class="nav-link px-lg-4">examples</a></li>
+						<li class="nav-item"><a href="#examples__anchor" class="nav-link px-lg-4">projects</a></li>
 						<li class="nav-item"><a href="#about__anchor" class="nav-link px-lg-4">about me</a></li>
 						<li class="nav-item"><a href="#contact__modal" data-toggle="modal" class="nav-link px-lg-4">contact me</a></li>
 						<li class="nav-item"><a href="https://github.com/vkhalikov" class="nav-link social-icon"><i class="fab fa-github-square"></i></a></li>
@@ -57,10 +58,10 @@
 	<header class="header py-3 py-sm-5 text-center" id="home__anchor">
 		<div class="container-fluid wrapper mx-auto d-flex flex-column justify-content-around align-items-center">
 			<h1 class="h1 text-uppercase mb-4">welcome to my portfolio</h1>
-			<h3 class="h3 text-uppercase">go to the section below to see the examples of my work</h3>
+			<h3 class="h3 text-uppercase">go to the section below to see my projects</h3>
 			<div class="row">
-				<div class="col-md-6 pt-3"><a href="#examples__anchor" class="btn shadow">find out more</a></div>
-				<div class="col-md-6 pt-3"><a href="#contact__modal" data-toggle="modal" class="btn shadow button-secondary">contact me</a></div>
+				<div class="col-md-6 pt-3"><a href="#examples__anchor" class="btn shadow">projects</a></div>
+				<div class="col-md-6 pt-3"><a href="#about__anchor" class="btn shadow button-secondary">about me</a></div>
 			</div>
 		</div>
 	</header>
@@ -68,21 +69,25 @@
 	<!-- CONTACT SECTION/MODAL WINDOW -->
 	<div class="modal fade" tabindex="-1" id="contact__modal">
 		<div class="modal-dialog">
-		   	<div class="modal-content">
-		      	<div class="modal-header">
-		        	<h5 class="modal-title">Contact Me</h5>
-		       		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		         	<span>&times;</span>
-		        	</button>
+		  	<div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title text-uppercase">Contact Me</h5>
+		       	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		         <span>&times;</span>
+		        </button>
 		      	</div>
 		      	<div class="modal-body">
 		        	<h4 class="resume__personal-title">Phone</h4>
-					<p>+7 (965) 019-69-14</p>
-					<h4 class="resume__personal-title">E-mail</h4>
-					<p>vkhalikov.work@gmail.com</p>
-					<h4 class="resume__personal-title"><i class="fab fa-vk"></i></h4>
-					<a href="https://vk.com/ashon" class="resume__link"><p>vk.com/ashon</p></a>
-		     	</div>
+							<a href="tel:+79650196914" class="resume__link">
+								<p>+7 (965) 019-69-14</p>
+							</a>
+							<h4 class="resume__personal-title">E-Mail</h4>
+							<a href="mailto:vkhalikov.work@gmail.com" class="resume__link">
+								<p>vkhalikov.work@gmail.com</p>
+							</a>
+							<h4 class="resume__personal-title"><i class="fab fa-vk"></i></h4>
+							<a href="https://vk.com/ashon" class="resume__link"><p>vk.com/ashon</p></a>
+		     		</div>
 		      	<div class="modal-footer justify-content-around">
 		        	<button type="button" class="btn btn-block" data-dismiss="modal">Close</button>
 		      	</div>
@@ -90,15 +95,14 @@
 		</div>
 	</div>
 
-	<!-- EXAMPLES SECTION -->
+	<!-- PROJECTS SECTION -->
 	<section class="examples py-4" id="examples__anchor">
 		<div class="container-fluid wrapper mx-auto">
-			<h2 class="h2 text-center text-uppercase">examples</h2>
+			<h2 class="h2 text-center text-uppercase">projects</h2>
 			<h4 class="h5 text-center  mt-3">Click on the image to see a full version, or go directly to a website by pressing a button</h4>
-			<!-- CARDS -->
 			<div class="row py-4 justify-content-around align-items-center">
 				<div class="col-sm-6 col-lg-4">
-					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card">
+					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
 							<div class="card__container_img card-wip"><i class="fas fa-wrench img__icon-wip"></i></div>
 						  	<div class="card-body">
 						    	<h5 class="card-title">WIP</h5>
@@ -107,28 +111,44 @@
 						  	</div>
 					</div>
 				</div>
+			<!-- CARDS START HERE -->
 				<div class="col-sm-6 col-lg-4">
-					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card">
+					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
+						<div class="card__container_img">
+							<a class="card__img" data-fancybox="gallery" href="img/command-helper.png"><img class="img-fluid" src="img/command-helper.png" alt="command-helper"><i class="fas fa-search-plus img__icon-zoom"></i></a>
+						</div>
+						  	<div class="card-body">
+						    	<h5 class="card-title ">Command Helper</h5>
+							    <p class="card-text">A simple cheat sheet for different shell commands. Built using <b>React</b> and <b>Bootstrap</b>.</p>
+							    <div class="d-flex flex-row align-items-center justify-content-between">
+								    <a href="https://vkhalikov.github.io/command-helper" class="btn button-animate">see live <i class="fas fa-angle-double-right"></i></a>
+								    <a href="https://github.com/vkhalikov/command-helper" class="link-repo">source <i class="fab fa-github"></i></a>
+							    </div>
+						  	</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
 						<div class="card__container_img">
 							<a class="card__img" data-fancybox="gallery" href="examples/dartServiceManager/example.png"><img class="img-fluid" src="examples/dartServiceManager/example_min.png" alt="dartServiceManager">
 							<i class="fas fa-search-plus img__icon-zoom"></i></a>
 						</div>
 						  	<div class="card-body">
 						    	<h5 class="card-title">Dart Service Manager</h5>
-							    <p class="card-text">My first landing page on bootstrap</p>
-							    <a href="examples/dartServiceManager/index.html" class="btn button-animate">Visit a website <i class="fas fa-angle-double-right"></i></a>
+							    <p class="card-text">Landing page on <b>Bootstrap</b>.</p>
+							    <a href="examples/dartServiceManager/index.html" class="btn button-animate">see live <i class="fas fa-angle-double-right"></i></a>
 						  	</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-4">
-					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card">
+					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
 						<div class="card__container_img">
 							<a class="card__img" data-fancybox="gallery" href="examples/lian/example.png"><img class="img-fluid" src="examples/lian/example_min.png" alt="Lian"><i class="fas fa-search-plus img__icon-zoom"></i></a>
 						</div>
 						  	<div class="card-body">
 						    	<h5 class="card-title ">Lian</h5>
-							    <p class="card-text">My first landing page</p>
-							    <a href="examples/lian/index.html" class="btn button-animate">Visit a website <i class="fas fa-angle-double-right"></i></a>
+							    <p class="card-text">My first attempt to create a web page. Pure <b>CSS</b> and <b>HTML</b>.</p>
+							    <a href="examples/lian/index.html" class="btn button-animate">see live <i class="fas fa-angle-double-right"></i></a>
 						  	</div>
 					</div>
 				</div>
@@ -140,8 +160,10 @@
 	<section class="resume" id="about__anchor">
 		<div class="wrapper mx-auto container-fluid ">
 			<h2 class="resume__name"><span class="first-name">vadim</span> khalikov</h2>
-			<h2 class="resume__spec">front end developer</h2>
-			<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, neque, delectus. Animi mollitia ullam tempore repellat veniam, excepturi vero vel et tempora modi fugiat! Aperiam, libero, modi! Numquam cumque, dicta.</p>
+			<h2 class="resume__spec">web developer</h2>
+			<p class="mb-2">I started building for the web in 2019. Since then, one of my main principles has been the constant learning.</br>
+			Learning something new, I create websites in order to consolidate an acquired knowledge. Some of them are represented in this portfolio.
+			</p>
 			<div class="row">
 
 				<!-- Side -->
@@ -151,11 +173,17 @@
 							<h4 class="resume__personal-title">City</h4>
 							<p>Saint-Petersburg, Russia</p>
 							<h4 class="resume__personal-title">Phone</h4>
-							<p>+7 (965) 019-69-14</p>
+							<a href="tel:+79650196914" class="resume__link">
+								<p>+7 (965) 019-69-14</p>
+							</a>
 							<h4 class="resume__personal-title">E-mail</h4>
-							<p>vkhalikov.work@gmail.com</p>
+							<a href="mailto: vkhalikov.work@gmail.com" class="resume__link">
+								<p>vkhalikov.work@gmail.com</p>
+							</a>
 							<h4 class="resume__personal-title">Github</h4>
-							<a href="https://github.com/vkhalikov" class="resume__link"><p class="">github.com/vkhalikov</p></a>
+							<a href="https://github.com/vkhalikov" class="resume__link">
+								<p>github.com/vkhalikov</p>
+							</a>
 							<h4 class="resume__personal-title">VK</h4>
 							<a href="https://vk.com/ashon" class="resume__link"><p>vk.com/ashon</p></a>
 						</div>
@@ -170,7 +198,7 @@
 							<div class="progress">
 								<div class="progress-bar w-75"></div>
 							</div>
-							<div class="progress-label">upper-intermediate</div>
+							<div class="progress-label">intermediate</div>
 						</div>
 				</div>
 
@@ -208,7 +236,35 @@
 							</div>
 						</div>
 						<div class="col-4">
-							<h5 class="resume__personal-title">JS <i class="fab fa-js font-weight-normal"></i></h5>
+							<h5 class="resume__personal-title">JavaScript <i class="fab fa-js font-weight-normal"></i></h5>
+							<div class="skill">
+								<div class="skill-level">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div class="skill-false"></div>
+								</div>
+								<p class="skill-label">advanced</p>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<div class="col-4">
+							<h5 class="resume__personal-title">React <i class="fab fa-react font-weight-normal"></i></h5>
+							<div class="skill">
+								<div class="skill-level">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div class="skill-false"></div>
+								</div>
+								<p class="skill-label">advanced</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<h5 class="resume__personal-title">NodeJS <i class="fab fa-node font-weight-normal"></i></h5>
 							<div class="skill">
 								<div class="skill-level">
 									<div></div>
@@ -226,7 +282,7 @@
 					<h3 class="resume__title"><i class="fas fa-puzzle-piece"></i> Extra skills</h3>
 					<div class="row mb-3">
 						<div class="col-4">
-							<h5 class="resume__personal-title">Bootstrap</h5>
+							<h5 class="resume__personal-title">Bootstrap <i class="fab fa-bootstrap"></i></h5>
 							<div class="skill">
 								<div class="skill-level">
 									<div></div>
@@ -245,10 +301,10 @@
 									<div></div>
 									<div></div>
 									<div></div>
-									<div></div>
+									<div class="skill-false"></div>
 									<div class="skill-false"></div>
 								</div>
-								<p class="skill-label">advanced</p>
+								<p class="skill-label">middle</p>
 							</div>
 						</div>
 						<div class="col-4">
@@ -289,18 +345,18 @@
 							<h5 class="resume__main-title">Saint-Petersburg Electrotechnical University (ETU "LETI")</h5>
 							<ul>
 								<li>M.Eng. in Electrical Engineering - 2019</li>
-								<li>TBA GPA</li>
+								<li>4.7 GPA</li>
 							</ul>
 						</div>
 					</div>
-					<a href="#contact__modal" data-toggle="modal" class="btn btn-block button-animate shadow">hire me <i class="fas fa-angle-double-up"></i></a>
+					<a href="#contact__modal" data-toggle="modal" class="btn btn-block button-animate shadow">contact me <i class="fas fa-angle-double-up"></i></a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer class="footer">
 		<div class="wrapper container-fluid mx-auto py-4">
-			<p class="copyright">Developed By Vadim Khalikov vkhalikov.work@gmail.com</p>
+			<p class="copyright">Developed By Vadim Khalikov, 2019</p>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

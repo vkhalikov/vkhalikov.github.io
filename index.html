@@ -6,20 +6,19 @@
 	<!-- Primary Meta Tags -->
 	<title>Vadim Khalikov. Portfolio</title>
 	<meta name="title" content="Vadim Khalikov. Portfolio">
-	<meta name="description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to contact me? Just contact me via contact section.">
-
+	<meta name="description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the projects section. There is also a little information about me.">
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://vkhalikov.github.io/">
 	<meta property="og:title" content="Vadim Khalikov. Portfolio">
-	<meta property="og:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the projects section. There is also a little information about me.  Want to contact me? Just contact me via contact section.">
+	<meta property="og:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the projects section. There is also a little information about me.">
 	<meta property="og:image" content="example.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://vkhalikov.github.io/">
 	<meta property="twitter:title" content="Vadim Khalikov. Portfolio">
-	<meta property="twitter:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the example section. There is also a little information about me.  Want to contact me? Just contact me via contact section.">
+	<meta property="twitter:description" content="Hello there! I'm a front-end developer and here you can take a look on my projects, just go to the projects section. There is also a little information about me.">
 	<meta property="twitter:image" content="example.png">
 
 	<!-- Links -->
@@ -56,12 +55,12 @@
 
 	<!-- HEADER SECTION -->
 	<header class="header py-3 py-sm-5 text-center" id="home__anchor">
-		<div class="container-fluid wrapper mx-auto d-flex flex-column justify-content-around align-items-center">
-			<h1 class="h1 text-uppercase mb-4">welcome to my portfolio</h1>
-			<h3 class="h3 text-uppercase">go to the section below to see my projects</h3>
-			<div class="row">
-				<div class="col-md-6 pt-3"><a href="#examples__anchor" class="btn shadow">projects</a></div>
-				<div class="col-md-6 pt-3"><a href="#about__anchor" class="btn shadow button-secondary">about me</a></div>
+		<div class="container-fluid wrapper mx-auto d-flex flex-column justify-content-between align-items-md-start px-md-5 px-xl-0">
+			<h1 class="h1">Vadim Khalikov</h1>
+			<h3 class="h3 text-uppercase">web dev portfolio</h3>
+			<div class="row mt-3">
+				<div class="col-6 pt-3"><a href="#examples__anchor" class="btn shadow">projects</a></div>
+				<div class="col-6 pt-3"><a href="#about__anchor" class="btn shadow button-secondary">about me</a></div>
 			</div>
 		</div>
 	</header>
@@ -99,7 +98,6 @@
 	<section class="examples py-4" id="examples__anchor">
 		<div class="container-fluid wrapper mx-auto">
 			<h2 class="h2 text-center text-uppercase">projects</h2>
-			<h4 class="h5 text-center  mt-3">Click on the image to see a full version, or go directly to a website by pressing a button</h4>
 			<div class="row py-4 justify-content-around align-items-center">
 				<div class="col-sm-6 col-lg-4">
 					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
@@ -115,14 +113,29 @@
 				<div class="col-sm-6 col-lg-4">
 					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
 						<div class="card__container_img">
-							<a class="card__img" data-fancybox="gallery" href="img/command-helper.PNG"><img class="img-fluid" src="img/command-helper.PNG" alt="command-helper"><i class="fas fa-search-plus img__icon-zoom"></i></a>
+							<a class="card__img" data-fancybox="gallery" href="img/face-detector.png"><img class="img-fluid" src="img/face-detector.png" alt="command-helper"><i class="fas fa-search-plus img__icon-zoom"></i></a>
+						</div>
+						  	<div class="card-body">
+						    	<h5 class="card-title ">Face Detector App</h5>
+							    <p class="card-text">App that provides demografics info using face recognition <a href="https://www.clarifai.com/" target="_blank" class="link-repo">Clarifai API</a>. Built with <b>React</b>.</p>
+							    <div class="d-flex flex-row align-items-center justify-content-between">
+								    <a href="https://vkhalikov.github.io/face-detector" class="btn button-animate" target="_blank">see live <i class="fas fa-angle-double-right"></i></a>
+								    <a href="https://github.com/vkhalikov/face-detector" class="link-repo" target="_blank">source <i class="fab fa-github"></i></a>
+							    </div>
+						  	</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div data-aos="flip-up" data-aos-duration="700" data-aos-offset="100" class="card shadow">
+						<div class="card__container_img">
+							<a class="card__img" data-fancybox="gallery" href="img/command-helper.png"><img class="img-fluid" src="img/command-helper.png" alt="command-helper"><i class="fas fa-search-plus img__icon-zoom"></i></a>
 						</div>
 						  	<div class="card-body">
 						    	<h5 class="card-title ">Command Helper</h5>
-							    <p class="card-text">A simple cheat sheet for different shell commands. Built using <b>React</b> and <b>Bootstrap</b>.</p>
+							    <p class="card-text">A cheat sheet for different shell utilities. Built using <b>React</b> and <b>Bootstrap</b>.</p>
 							    <div class="d-flex flex-row align-items-center justify-content-between">
-								    <a href="https://vkhalikov.github.io/command-helper" class="btn button-animate">see live <i class="fas fa-angle-double-right"></i></a>
-								    <a href="https://github.com/vkhalikov/command-helper" class="link-repo">source <i class="fab fa-github"></i></a>
+								    <a href="https://vkhalikov.github.io/command-helper" class="btn button-animate" target="_blank">see live <i class="fas fa-angle-double-right"></i></a>
+								    <a href="https://github.com/vkhalikov/command-helper" class="link-repo" target="_blank">source <i class="fab fa-github"></i></a>
 							    </div>
 						  	</div>
 					</div>
@@ -136,7 +149,7 @@
 						  	<div class="card-body">
 						    	<h5 class="card-title">Dart Service Manager</h5>
 							    <p class="card-text">Landing page on <b>Bootstrap</b>.</p>
-							    <a href="examples/dartServiceManager/index.html" class="btn button-animate">see live <i class="fas fa-angle-double-right"></i></a>
+							    <a href="examples/dartServiceManager/index.html" class="btn button-animate" target="_blank">see live <i class="fas fa-angle-double-right"></i></a>
 						  	</div>
 					</div>
 				</div>
@@ -148,7 +161,7 @@
 						  	<div class="card-body">
 						    	<h5 class="card-title ">Lian</h5>
 							    <p class="card-text">My first attempt to create a web page. Pure <b>CSS</b> and <b>HTML</b>.</p>
-							    <a href="examples/lian/index.html" class="btn button-animate">see live <i class="fas fa-angle-double-right"></i></a>
+							    <a href="examples/lian/index.html" class="btn button-animate" target="_blank">see live <i class="fas fa-angle-double-right"></i></a>
 						  	</div>
 					</div>
 				</div>
